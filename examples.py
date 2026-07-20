@@ -69,29 +69,6 @@ def example_scientific_operations():
     print(f"  15% of 1000 = {calc.percentage(1000, 15)}")
 
 
-def example_trigonometric_operations():
-    """Demonstrate trigonometric operations"""
-    print("\n" + "="*70)
-    print("TRIGONOMETRIC OPERATIONS")
-    print("="*70)
-    
-    calc = Calculator()
-    
-    print("\nSine (sin):")
-    print(f"  sin(0°) = {calc.sine(0):.6f}")
-    print(f"  sin(90°) = {calc.sine(90):.6f}")
-    print(f"  sin(180°) = {calc.sine(180):.10f}")
-    
-    print("\nCosine (cos):")
-    print(f"  cos(0°) = {calc.cosine(0):.6f}")
-    print(f"  cos(60°) = {calc.cosine(60):.6f}")
-    print(f"  cos(90°) = {calc.cosine(90):.10f}")
-    
-    print("\nTangent (tan):")
-    print(f"  tan(0°) = {calc.tangent(0):.6f}")
-    print(f"  tan(45°) = {calc.tangent(45):.6f}")
-
-
 def example_logarithmic_operations():
     """Demonstrate logarithmic operations"""
     print("\n" + "="*70)
@@ -284,7 +261,6 @@ def run_all_examples():
     
     example_basic_arithmetic()
     example_scientific_operations()
-    example_trigonometric_operations()
     example_logarithmic_operations()
     example_statistical_operations()
     example_advanced_operations()

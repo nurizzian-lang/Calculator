@@ -18,9 +18,6 @@ class OperationType(Enum):
     POWER = "**"
     MODULO = "%"
     SQRT = "sqrt"
-    SINE = "sin"
-    COSINE = "cos"
-    TANGENT = "tan"
 
 
 class CalculationHistory:
@@ -145,32 +142,6 @@ class Calculator:
         result = (number * percent) / 100
         self.current_value = result
         self.history.add_entry(f"{percent}% of {number}", result)
-        return result
-    
-    # ==================== Trigonometric Operations ====================
-    
-    def sine(self, angle_degrees: float) -> float:
-        """Calculate sine of angle (in degrees)"""
-        angle_radians = math.radians(angle_degrees)
-        result = math.sin(angle_radians)
-        self.current_value = result
-        self.history.add_entry(f"sin({angle_degrees}°)", result)
-        return result
-    
-    def cosine(self, angle_degrees: float) -> float:
-        """Calculate cosine of angle (in degrees)"""
-        angle_radians = math.radians(angle_degrees)
-        result = math.cos(angle_radians)
-        self.current_value = result
-        self.history.add_entry(f"cos({angle_degrees}°)", result)
-        return result
-    
-    def tangent(self, angle_degrees: float) -> float:
-        """Calculate tangent of angle (in degrees)"""
-        angle_radians = math.radians(angle_degrees)
-        result = math.tan(angle_radians)
-        self.current_value = result
-        self.history.add_entry(f"tan({angle_degrees}°)", result)
         return result
     
     # ==================== Logarithmic Operations ====================

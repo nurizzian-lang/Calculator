@@ -122,26 +122,17 @@ class TestScientificOperations(unittest.TestCase):
         self.assertEqual(result, 30)
 
 
-class TestTrigonometricOperations(unittest.TestCase):
-    """Test trigonometric operations"""
+class TestRemovedTrigonometricOperations(unittest.TestCase):
+    """Ensure trigonometric operations are no longer exposed"""
     
     def setUp(self):
         self.calc = Calculator()
     
-    def test_sine(self):
-        """Test sine operation"""
-        result = self.calc.sine(90)
-        self.assertAlmostEqual(result, 1, places=5)
-    
-    def test_cosine(self):
-        """Test cosine operation"""
-        result = self.calc.cosine(0)
-        self.assertAlmostEqual(result, 1, places=5)
-    
-    def test_tangent(self):
-        """Test tangent operation"""
-        result = self.calc.tangent(45)
-        self.assertAlmostEqual(result, 1, places=5)
+    def test_trigonometric_methods_removed(self):
+        """Trigonometric methods should not be available"""
+        self.assertFalse(hasattr(self.calc, "sine"))
+        self.assertFalse(hasattr(self.calc, "cosine"))
+        self.assertFalse(hasattr(self.calc, "tangent"))
 
 
 class TestLogarithmicOperations(unittest.TestCase):

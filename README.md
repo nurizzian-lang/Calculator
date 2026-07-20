@@ -1,6 +1,6 @@
 # Advanced Calculator System
 
-A professional, production-ready calculator system with comprehensive arithmetic, scientific, trigonometric, logarithmic, and statistical operations.
+A professional, production-ready calculator system with comprehensive arithmetic, scientific, logarithmic, and statistical operations.
 
 ## Features
 
@@ -19,13 +19,7 @@ A professional, production-ready calculator system with comprehensive arithmetic
 - **Absolute Value** - Get |x|
 - **Percentage** - Calculate percentages
 
-### 📊 Trigonometric Operations
-- **Sine** - Calculate sin(θ)
-- **Cosine** - Calculate cos(θ)
-- **Tangent** - Calculate tan(θ)
-- Input angles in degrees, automatically converted to radians
-
-### 📈 Logarithmic Operations
+###  Logarithmic Operations
 - **Logarithm** - Calculate log with any base
 - **Natural Logarithm** - Calculate ln(x)
 - Includes validation for domain errors
@@ -110,10 +104,6 @@ print(calc.multiply(6, 7))                  # 42
 print(calc.square_root(25))                 # 5.0
 print(calc.power(2, 8))                     # 256
 
-# Trigonometric
-print(calc.sine(90))                        # 1.0
-print(calc.cosine(0))                       # 1.0
-
 # Statistical
 print(calc.average([5, 10, 15, 20]))        # 12.5
 print(calc.factorial(5))                    # 120
@@ -136,7 +126,7 @@ python calculator_ui.py
 ```
 
 This launches an interactive menu-driven interface where you can:
-1. Select from 27+ operations
+1. Select from 24 operations
 2. Input values when prompted
 3. View calculation history
 4. Clear history
@@ -233,7 +223,6 @@ calc.clear_history()
 The test suite includes:
 - ✓ Basic arithmetic operations
 - ✓ Scientific operations
-- ✓ Trigonometric functions
 - ✓ Logarithmic operations
 - ✓ Statistical operations
 - ✓ Advanced operations (combinations, permutations, GCD, LCM)
